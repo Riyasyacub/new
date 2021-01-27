@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+header a , .dropdown-item{
+    color: rgb(220,220,220);
+    &:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255) ;
+    }
+}
+.top-nav,.show , footer{
+    background-color: #134d7c ;
+}
+footer {
+    color: white;
+    .social_icons {
+        margin: 4px;
+    }
+}
