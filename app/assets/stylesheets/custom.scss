@@ -1,3 +1,6 @@
+:root {
+    --headerFooter: #134d7c;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -12,7 +15,7 @@ header a , .dropdown-item{
     }
 }
 .top-nav,.show , footer{
-    background-color: #134d7c ;
+    background-color: var(--headerFooter);
 }
 footer {
     color: white;
