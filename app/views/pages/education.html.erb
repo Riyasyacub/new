@@ -1,1 +1,75 @@
 <%= provide(:title, "Education")  %>
+
+<div class="container-fluid mt-5 ">
+    <div class="row align-item-center education-banner">
+        <div class="col-lg-6 col-md-6 ">
+            <div class="banner-content  ">
+                <h1>Choose wise and be wiser</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie varius leo, non laoreet purus viverra id.</p>
+            </div>
+            <div class="banner-btn row ">
+                <%= link_to "Contact Us", contact_path , class: "btn col-8 col-sm-5 col-md-5 col-lg-4 col-xl-4 mb-2 " %>
+                <%= link_to "Our Partners", "#", class: "btn col-8 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-2 " %>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 ">
+
+        </div>
+    </div>
+    <div class="container education-content-card ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-2 ">
+                <div class="card ">
+                    <%= image_tag("doctor.jpg", alt: "college1", class: "card-img-top img-fluid " ) %>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-2 ">
+                <div class="card ">
+                    <%= image_tag("doctor.jpg", alt: "college1", class: "card-img-top img-fluid " ) %>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-2 ">
+                <div class="card ">
+                    <%= image_tag("doctor.jpg", alt: "college1", class: "card-img-top img-fluid " ) %>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt ad corporis quo commodi facilis voluptatum, aliquid quasi sit quibusdam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 mb-3">
+        <h3>Submit a Query</h3>
+        <%= form_with(class: "form-group", local: true) do |f| %>
+        <div class="row">
+            <%= f.label :email, class: "col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3" %>
+            <%= f.email_field :email, class: "form-control col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 " %>
+        </div>
+        <div class="row mt-2 ">
+            <%= f.label :number, class: "col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3" %>
+            <%= f.number_field :number, class: "form-control col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 " %>
+        </div>
+        <div class="row mt-2">
+            <%= f.label :content , class: "col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3" %>
+            <%= f.text_area :content, rows: "5" , class: "form-control col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 " %>
+        </div>
+        <div class="row mt-2 ">
+            <div class="col-0 col-sm-8 col-md-8 col-lg-9 col-xl-9" ></div>
+            <%= f.submit "Submit" , class:"form-control col-12 col-sm-4 col-md-4 col-lg-2 col-xl-2 btn btn-success " %>
+        </div>
+    <% end %>
+    </div>
+</div>

@@ -1,9 +1,18 @@
 :root {
-    --headerFooter: #134d7c;
+    --headerFooter: #1B2432;
 }
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+// p {
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: 4;
+//     display: -webkit-box;
+//     overflow: hidden;
+// }
 .nav-link:hover {
     color: rgb(255, 255, 255);
 }
@@ -16,6 +25,7 @@ header a , .dropdown-item{
 }
 .top-nav,.show , footer{
     background-color: var(--headerFooter);
+    z-index: 9;
 }
 footer {
     color: white;
@@ -23,3 +33,57 @@ footer {
         margin: 4px;
     }
 }
+
+.education-banner {
+    // background-color: #5A3AC7;
+    background: url('doctor1.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding-left: 3%;
+    .banner-content {
+        padding-top: 20%;
+        
+        color: #171219;
+        h1 {
+            font-family: "playfair display", serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 4rem;
+        }
+    }
+    .banner-btn {
+        .btn {
+        color: white;
+        font-weight: 700;
+        padding: 12px 30px ;
+        margin: 0 4px;
+        background-color: #0D8CD9;
+        }
+        padding-bottom: 20%;
+    }
+
+}
+.form-control {
+    margin-left: 12px;
+    width: 96%;
+    
+}
+h3 {
+    font-family: "playfair display", serif;
+            font-size: 2rem;
+            font-weight: 700;
+            // line-height: 4rem;
+}
+.education-content-card {
+    margin-top: 4rem;
+    .card {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .education-banner {
+        background: #FDDC63;
+    }
+}
+

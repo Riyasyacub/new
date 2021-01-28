@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-md navbar-fixed-top top-nav" >
+<header class="navbar navbar-expand-md fixed-top top-nav" >
     <div class="container-fluid" >
         <%= link_to "Alnafis Groups", root_path, id: "logo", class: "navbar-brand" %>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,11 +12,10 @@
                     <%= link_to "Tours", "#", class: "dropdown-item" %>
                     <%= link_to "Travels", "#", class: "dropdown-item" %>
                     <%= link_to "Online Works", "#", class: "dropdown-item" %>
-                   
                 </div> </li>
-                <li class="nav-item" ><%= link_to "Education", education_path, class: "nav-link" %></li>
-                <li class="nav-item" ><%= link_to "About", about_path, class: "nav-link" %></li>
-                <li class="nav-item" ><%= link_to "Contact", contact_path, class: "nav-link"%></li>
+                <li class="nav-item" ><%= link_to "Education", education_url, class: "nav-link" %></li>
+                <li class="nav-item" ><%= link_to "About", about_url, class: "nav-link" %></li>
+                <li class="nav-item" ><%= link_to "Contact", contact_url, class: "nav-link"%></li>
             </ul>
         </nav>
     </div>
