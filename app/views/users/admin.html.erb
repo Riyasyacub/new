@@ -1,0 +1,9 @@
+<% provide(:title, "admin")  %>
+<div style="height: 80px;" ></div>
+
+
+<h3>Home Carousel</h3>
+ <%= form_for :user do |f| %>
+  <p><%= f.file_field :filename %></p>
+  <p><%= f.submit "Upload Image" %></p>
+<% end %>

@@ -1,0 +1,9 @@
+<% provide(:title , "Users-List") %>
+<h1 style="padding: 70px 0 20px 30px;" >List_Users</h1>
+<% @users.each do |u| %>
+    <%= u.id %><br>
+    <%= u.email %><br>
+    <%= u.number %><br>
+    <%= u.password %><br>
+    <br>
+<% end %>

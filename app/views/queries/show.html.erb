@@ -1,0 +1,10 @@
+<% provide(:title , "after-create") %>
+<%= @notice %>
+<h1 style="padding: 70px 0 20px 30px;" >List_Users</h1>
+<% @query.each do |u| %>
+    <%= u.id %><br>
+    <%= u.email %><br>
+    <%= u.number %><br>
+    <%= u.content %><br>
+    <br>
+<% end %>
