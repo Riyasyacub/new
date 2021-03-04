@@ -10,4 +10,6 @@ class PagesController < ApplicationController
   end
   def contact
   end
+  def online 
+  end
 end

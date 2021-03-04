@@ -61,4 +61,5 @@ config.action_mailer.perform_deliveries = true
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.hosts << "3000-cb91c4bf-1232-47fe-81c8-2045e02d3b11.ws-us03.gitpod.io"
+  config.hosts << "3000-gray-aardvark-n7c2mh25.ws-us03.gitpod.io"
 end
